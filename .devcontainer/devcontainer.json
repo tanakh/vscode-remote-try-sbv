@@ -1,0 +1,7 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+	"name": "SBV",
+	"dockerFile": "Dockerfile",
+	"appPort": [],
+	"extensions": ["vans.haskero"]
+}

@@ -1,0 +1,34 @@
+name:                try-sbv
+version:             0.1.0.0
+github:              "tanakh/vscode-remote-try-sbv"
+license:             BSD3
+author:              "Hideyuki Tanaka"
+maintainer:          "tanaka.hideyuki@gmail.com"
+copyright:           "2019 Hideyuki Tanaka"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/tanakh/vscode-remote-try-sbv#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+executables:
+  try-sbv-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - sbv
